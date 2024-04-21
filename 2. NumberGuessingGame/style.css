@@ -1,0 +1,51 @@
+body{
+    font-family: Verdana;
+    font-size: 1em;
+    background-color: #263238;
+    overflow: hidden;
+}
+
+#header{
+    font-family: courier;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+#guessing{
+    justify-content: center;
+    text-align: center;
+}
+
+#guessBtn{
+    background-color: lightblue;
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+}
+
+#guessBtn:hover{
+    background-color: rgb(42, 225, 231);
+}
+
+#textinput{
+    border-radius: 8px;
+    width: 200px;
+    height: 30px;
+}
+
+#h2{
+    color: #fff;
+}
+
+#comment{
+    text-align: center;
+    justify-items: center;
+    color: #fff;
+    font-family: courier;
+}
+
+#guessCounter{
+    color: #fff;
+}

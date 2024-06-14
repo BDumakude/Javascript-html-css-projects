@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #5145BA;
+}
+
+.container{
+    background: #fff;
+    min-width: 400px;
+    border-radius: 6px;
+}
+
+.container .heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+h1{
+    color: #5145BA;
+}
+
+.container .input-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 20px 10px;
+    gap: 5px;
+}
+
+.container .input-container input{
+    width: 90%;
+    border-radius: 15px;
+    height: 30px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 10px;
+    font-weight: 550;
+    color: hsla(120, 2%, 18%, 0.785);
+}
+
+.container .input-container button{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border: none;
+    background: #5145BA;
+    color: #fff;
+    cursor: pointer;
+}
+
+.container .input-container button:hover{
+    background: #796de0;
+}
+.container .input-container button:active{
+    background: hsl(246, 65%, 55%);
+}
+
+ul{
+    padding: 0px 0px 20px 0px
+}
+
+ul li{
+    list-style: none;
+    padding: 10px 15px 10px 40px;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-image: url("unchecked.png");
+    background-size: cover;
+    background-position: center;
+    left: 15px;
+    top: 10px;
+}
+
+ul li.checked{
+    color: grey;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url("checked.png");
+}
+
+ul li span{
+    position: absolute;
+    right: 6px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    color: grey;
+}
+
+ul li span:hover{
+    color: hsl(0, 88%, 65%);
+    
+}
